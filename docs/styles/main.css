@@ -24,6 +24,26 @@ ul, ol {
   background-size: cover;
   background-position: center; }
 
+@-webkit-keyframes enter {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
 body {
   font-family: Roboto;
   background: black; }
@@ -36,6 +56,7 @@ body {
   background: rgba(0, 0, 0, 0.5); }
 
 #screen {
+  position: relative;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,15 +65,25 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
-  background-image: url(http://www.supergoofmedia.com/wp-content/uploads/NBA-2016-Finals.png);
-  background-attachment: fixed; }
+  height: 100vh; }
 
 #screen-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  position: relative;
-  z-index: 1;
-  margin: auto; }
+  margin: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  z-index: 1; }
   #screen-text h2 {
     font-size: 6rem;
     line-height: 1;
@@ -71,17 +102,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  margin: 1rem auto; }
+  margin: auto auto 32px auto; }
   #screen-arrow span {
-    text-transform: uppercase;
-    opacity: .75; }
-  #screen-arrow svg {
-    width: 64px;
-    height: 64px;
-    fill: white; }
+    text-transform: uppercase; }
+  #screen-arrow i {
+    font-size: 64px; }
+  #screen-arrow:hover {
+    cursor: pointer; }
+
+#screen-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background-image: url(http://www.supergoofmedia.com/wp-content/uploads/NBA-2016-Finals.png);
+  background-attachment: fixed;
+  opacity: .5; }
 
 #header {
   position: fixed;
@@ -91,6 +128,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -120,17 +158,7 @@ body {
   line-height: 1; }
 
 #content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: #dedeed;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+  background: #dedeed; }
 
 .banner {
   background: white;

@@ -1,15 +1,20 @@
 @import 'vars';
 @import 'reset';
 
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 body {
   font-family: Roboto;
   background: black;
-}
-
-#wrap {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: stretch;
 }
 
 .overlay {
@@ -21,19 +26,21 @@ body {
 }
 
 #screen {
+  position: relative;
   color: white;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: url(http://www.supergoofmedia.com/wp-content/uploads/NBA-2016-Finals.png);
-  background-attachment: fixed;
 }
 
 #screen-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  position: relative;
-  z-index: 1;
   margin: auto;
+  flex: 1;
+  z-index: 1;
   h2 {
     font-size: 6rem;
     line-height: 1;
@@ -48,19 +55,27 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  margin: 1rem auto;
+  margin: auto auto 32px auto;
   span {
     text-transform: uppercase;
-    opacity: .75;
   }
-  svg {
-    width: 64px;
-    height: 64px;
-    fill: white;
+  i {
+    font-size: 64px;
   }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#screen-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background-image: url(http://www.supergoofmedia.com/wp-content/uploads/NBA-2016-Finals.png);
+  background-attachment: fixed;
+  opacity: .5;
 }
 
 #header {
@@ -69,6 +84,7 @@ body {
   right: 0;
   top: 0;
   display: flex;
+  z-index: 1;
   justify-content: space-between;
   height: $header-height;
   color: white;
@@ -96,11 +112,7 @@ body {
 }
 
 #content {
-  display: flex;
-  flex-direction: column;
-  // margin-top: $header-height;
   background: $color-offwhite;
-  flex: 1;
 }
 
 .banner {
