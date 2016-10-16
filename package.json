@@ -1,0 +1,29 @@
+{
+  "name": "supergoof",
+  "version": "1.0.0",
+  "description": "Website for SuperGoof Media.",
+  "devDependencies": {
+    "browser-sync": "^2.17.2",
+    "browserify": "^13.1.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "ngrok": "^2.2.3",
+    "run-sequence": "^1.2.2",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grandonbroseph/supergoof.git"
+  },
+  "author": "Brandon Semilla (grandonbroseph+gh@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grandonbroseph/supergoof/issues"
+  },
+  "homepage": "https://github.com/Pgrandonbroseph/supergoof#readme"
+}

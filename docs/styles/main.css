@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body, #wrap {
+  height: 100%;
+  min-height: 100vh; }
+
+body {
+  font: 1rem/1.333 sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100; }
+
+button {
+  border: 0; }
+
+ul, ol {
+  list-style: none; }
+
+.image {
+  background-color: black;
+  background-size: cover;
+  background-position: center; }
+
+body {
+  font-family: Roboto;
+  background: black; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); }
+
+#screen {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-image: url(http://www.supergoofmedia.com/wp-content/uploads/NBA-2016-Finals.png);
+  background-attachment: fixed; }
+
+#screen-text {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: auto; }
+  #screen-text h2 {
+    font-size: 6rem;
+    line-height: 1;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.75); }
+  #screen-text span {
+    font-size: .5rem; }
+
+#screen-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 1rem auto; }
+  #screen-arrow span {
+    text-transform: uppercase;
+    opacity: .75; }
+  #screen-arrow svg {
+    width: 64px;
+    height: 64px;
+    fill: white; }
+
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 4em;
+  color: white;
+  background: transparent;
+  -webkit-transition: background .25s;
+  transition: background .25s; }
+  #header section {
+    padding: 16px 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #header.sticky {
+    background: #00abff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+.nav-link {
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-weight: 100; }
+
+#title {
+  line-height: 1; }
+
+#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #dedeed;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.banner {
+  background: white;
+  padding: 5% 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+.box {
+  background: white;
+  padding: 24px 5%;
+  margin: 5% 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px; }
+
+#footer {
+  background: #353f47;
+  color: white;
+  font-weight: 100;
+  font-size: 1.1rem;
+  padding: 12px 5%; }
+
+h3 {
+  color: gray;
+  font-size: 2rem;
+  margin-bottom: 16px; }
+  h3:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: -webkit-linear-gradient(left, gray, transparent 50%);
+    background: linear-gradient(to right, gray, transparent 50%); }
+
+p {
+  color: darkgray;
+  text-align: justify; }

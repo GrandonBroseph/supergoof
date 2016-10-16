@@ -1,0 +1,43 @@
+doctype
+html
+  head
+    title SuperGoof!
+    meta(name='viewport' content='initial-scale=1')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:100,400,700|Material+Icons' rel='stylesheet' type='text/css')
+    link(href='styles/main.css' type='text/css' rel='stylesheet')
+  body
+    #wrap
+      #screen.image
+        .overlay
+        #screen-text
+          h2 We make fun.
+          span topkek
+        #screen-arrow
+          span Scroll down
+          include ../images/arrow-down.svg
+      header#header
+        section#brand
+          #logo
+          h1#title SuperGoof!
+        section#nav
+          a.nav-link Blog
+          a.nav-link Videos
+          a.nav-link Games
+          a.nav-link Advice
+      #content
+        .banner
+          h3 I'm a banner.
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .box
+          h3 I'm a box.
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .banner
+          h3 I'm another banner.
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .box
+          h3 I'm another box.
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      footer#footer
+        span &copy;2016 SuperGoof Media.
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.js')
+    script(src='scripts/main.js')

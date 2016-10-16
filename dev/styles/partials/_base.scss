@@ -1,0 +1,143 @@
+@import 'vars';
+@import 'reset';
+
+body {
+  font-family: Roboto;
+  background: black;
+}
+
+#wrap {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: stretch;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(black, .5);
+}
+
+#screen {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(http://www.supergoofmedia.com/wp-content/uploads/NBA-2016-Finals.png);
+  background-attachment: fixed;
+}
+
+#screen-text {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  h2 {
+    font-size: 6rem;
+    line-height: 1;
+    text-shadow: 0 4px 8px rgba(black, .75);
+  }
+  span {
+    font-size: .5rem;
+  }
+}
+
+#screen-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 1rem auto;
+  span {
+    text-transform: uppercase;
+    opacity: .75;
+  }
+  svg {
+    width: 64px;
+    height: 64px;
+    fill: white;
+  }
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: $header-height;
+  color: white;
+  background: transparent;
+  transition: background .25s;
+  section {
+    padding: 16px 5%;
+    display: flex;
+    align-items: center;
+  }
+  &.sticky {
+    background: $color-theme;
+    box-shadow: $shadow;
+  }
+}
+
+.nav-link {
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+#title {
+  line-height: 1;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  // margin-top: $header-height;
+  background: $color-offwhite;
+  flex: 1;
+}
+
+.banner {
+  background: white;
+  padding: 5% 10%;
+  box-shadow: $shadow;
+}
+
+.box {
+  background: white;
+  padding: 24px 5%;
+  margin: 5% 10%;
+  box-shadow: $shadow;
+  border-radius: 4px;
+}
+
+#footer {
+  background: $color-dark;
+  color: white;
+  font-weight: 100;
+  font-size: 1.1rem;
+  padding: 12px 5%;
+}
+
+h3 {
+  color: $color-heading;
+  font-size: 2rem;
+  margin-bottom: 16px;
+  &:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: linear-gradient(to right, $color-heading, transparent 50%);
+  }
+}
+
+p {
+  color: $color-content;
+  text-align: justify;
+}
